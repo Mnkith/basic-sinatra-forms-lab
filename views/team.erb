@@ -5,7 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+  <h1>Team Name: <%=@team_name%></h1>
+  <%@players.each_with_index do |player, index|%>
+    <h2><%= @roles[index]%>: <%= player%></h2>
+    
+  <%end%>
 
 
  </body>
